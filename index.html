@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+    <title>Ares Royale | Pakked Games</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ares, uefn, fortnite, mini-royale, battle royale, loolo, pakked">
+    <meta name="description" content="Official website for Ares Royale." />
+    <meta name="author" content="Pakked Games Team" />
+    <meta name="robots" content="no" />
+    <meta name="theme-color" content="#D15732" />
+
+    <meta property="og:site_name" content="ares.pakkedgames.com">
+    <meta property="og:title" content="Ares Royale" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://ares.pakkedgames.com" />
+    <meta property="og:image" content="https://cdn.aresfn.dev/embeds/ares-Logo-1000px.png" />
+    <meta property="og:description"
+        content="Welcome to Ares, a new Fortnite Experience, Brought to you by Pakked Games!" />
+
+    <script src="js/layout.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        async function setupLayout() {
+            var cosmetics = await getCosmeticsById("");
+
+            if (cosmetics.length == 0) {
+                setDefaultPfp("PID_420_ares_Fernatino_Y_secretmessageHi")
+            } else
+                setLayoutPfp(hidden[01])
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/homepage.css" />
+</head>
+
+<body>
+
+    <header id="navbar">
+
+        <img src="img/ares-icon-lq.png" class="ares" onclick="window.location = '/#'" alt="ares" />
+        <ul class="desktop-navbar">
+            <li><a href="#about">About</a></li>
+            <li><a href="https://discord.gg/aresFN">Discord</a></li>
+            <li><a href="https://trello.com/b/6yWI6ZvP/ares">News</a></li>
+        </ul>
+        <ul class="minimized-navbar">
+            <li><a href="/download"><i class="fas fa-download"></i></a></li>
+            <li><a href="https://discord.gg/aresFN"><i class="fab fa-discord"></i></a></li>
+            <li><a href="https://trello.com/b/6yWI6ZvP/ares"><i class="fab fa-trello"></i></a></li>
+        </ul>
+        <div class="account-panel">
+            <a class="button" onclick="openModal('login-modal')">MAP CODE</a>
+        </div>
+    </header>
+
+    <div class="section" id="top">
+        <div class="ares-bg"></div>
+        <div class="section-content">
+            <div class="field" id="introduction">
+                <h1>Ares Royale</h1>
+                <h3>A Fortnite Micro-Royale with an ever-expanding world, Experience: New locations, timeless weapons, and more!</h3>
+                <a class="button" href="#about">About</a>
+                <a class="button" href="https://twitter.com/aresroyalefn">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-b" id="about">
+        <div class="section-content">
+            <div class="field">
+                <h1>About</h1>
+                <h3>Ares is a Fortnite Micro-Royale built in an ever-evolving world, Explore New locations, Find Timeless weapons, and more!</h3>
+                <h3>Ares is For The Community, For The Players, For You.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <div class="section-content">
+            <span class="divider-text">or</span>
+            <div class="division horizontal">
+                <div class="field">
+                    <h1>Play</h1>
+                    <h3>If you'd like to hang out with us or play our map, join us over on <a
+                            href="https://discord.gg/aresFN">our Discord Server!</a></h3>
+                    &nbsp;
+                    <h3>Alternatively, you can follow us for updates on <a
+                            href="https://www.twitter.com/AresRoyaleFN">Twitter</a>!</h3>
+                </div>
+                <hr />
+                <span class="divider-mobile">or</span>
+                <div class="field">
+                    <h1>Business</h1>
+                    <h3>If you have a business inquiry, feel free to contact us at <a
+                            href="cdn-cgi/l/email-protection#b8dbd7d6ccd9dbccf8d9cdcad7cad9ded696dcddce"><span
+                                class="__cf_email__"
+                                data-cfemail="593a36372d383a2d19382c2b362b383f37773d3c2f">aresroyale@pakkedgames.com</span></a>.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <div class="login-modal">
+            <div class="modal-left">
+                <h1 class="modal-title">Error</h1>
+                <p class="modal-desc">This site needs to use JavaScript to ensure the best user experience. Please turn
+                    on JavaScript and refresh the page.</p>
+            </div>
+            <div class="modal-right">
+            </div>
+        </div>
+    </noscript>
+
+    <div class="btt-overlay hidden" id="btt-overlay">
+        <i class="fas fa-arrow-circle-up" onclick="window.location = '#top'"></i>
+    </div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/accountpanel.js"></script>
+    <script src="js/fortniteApi.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        window.onload = setupLayout();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+h3 {
+    padding-top: 5px;
+    padding-bottom: 10px
+}
+
+#introduction {
+    text-align: center
+}
+
+#introduction .button {
+    margin-right: 5px
+}
+
+#introduction h1 {
+    font-size: max(2vw, 90px);
+    margin-bottom: 10px
+}
+
+#introduction h3 {
+    margin-bottom: 5px
+}
+
+.ares-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 100;
+    background-image: url(../img/arestile-lq.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 60%;
+    animation: scroll 500s linear infinite;
+    overflow: hidden
+}
+
+.ares-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-image: url(../img/gradient.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    overflow: hidden
+}
+
+.ares-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .95;
+    background-color: #000
+}
+
+.division.horizontal {
+    display: flex;
+    flex-direction: row
+}
+
+.division.horizontal hr {
+    width: 1px;
+    height: 100%;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: .15
+}
+
+.division.horizontal .field {
+    width: 300px
+}
+
+.divider-text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    opacity: .2
+}
+
+.divider-mobile {
+    display: none
+}
+
+@media only screen and (max-width:600px) {
+    #introduction h1 {
+        font-size: 50px;
+        margin-bottom: 0
+    }
+
+    #introduction h3 {
+        font-size: 12px
+    }
+
+    .ares-bg {
+        background-size: 260%
+    }
+
+    .division.horizontal {
+        flex-direction: column
+    }
+
+    .division.horizontal hr {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 1px
+    }
+
+    .divider-text {
+        display: none
+    }
+
+    .divider-mobile {
+        background: #010101;
+        display: unset;
+        margin: auto;
+        margin-top: -33px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        opacity: 1;
+        z-index: 1;
+        width: 35px;
+        color: #383838
+    }
+}
+
+/*
+     FILE ARCHIVED ON 15:47:40 Jan 16, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:38:50 Apr 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 83.036
+  exclusion.robots: 0.173
+  exclusion.robots.policy: 0.157
+  cdx.remote: 0.095
+  esindex: 0.013
+  LoadShardBlock: 44.173 (3)
+  PetaboxLoader3.datanode: 53.441 (4)
+  load_resource: 121.137
+  PetaboxLoader3.resolve: 86.823
+*/
