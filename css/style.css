@@ -367,6 +367,24 @@
      background: #090909;
      place-items: center
  }
+ .section-c {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    background: #010101;
+    place-items: center
+}
+.section-d {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    background: #090909;
+    place-items: center
+}
 
  .section-content {
      display: grid;
