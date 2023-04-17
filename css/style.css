@@ -192,6 +192,16 @@
      transition: .4s
  }
 
+ .are {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    z-index: 11;
+    padding: 9px;
+    position: absolute;
+    transition: .4s
+}
+
  header ul {
      position: absolute;
      margin-left: 85px;
