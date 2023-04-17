@@ -51,12 +51,12 @@
             <li><a href="https://trello.com/b/6yWI6ZvP/ares">News</a></li>
         </ul>
         <ul class="minimized-navbar">
-            <li><a href="/download"><i class="fas fa-download"></i></a></li>
+            <li><a href="/theMap.html"><i class="fas fa-download"></i></a></li>
             <li><a href="https://discord.gg/aresFN"><i class="fab fa-discord"></i></a></li>
             <li><a href="https://trello.com/b/6yWI6ZvP/ares"><i class="fab fa-trello"></i></a></li>
         </ul>
         <div class="account-panel">
-            <a class="button" onclick="openModal('login-modal')">MAP CODE</a>
+            <a class="button" href="theMap.html">MAP CODE</a>
         </div>
     </header>
 
@@ -130,6 +130,14 @@
     <script>
         window.onload = setupLayout();
     </script>
+
+<system.webServer>
+    <staticContent>
+      <remove fileExtension=".woff2" />
+      <mimeMap fileExtension=".woff2" mimeType="font/woff2" />
+    </staticContent>
+  </system.webServer>
+
 </body>
 
 </html>

@@ -16,11 +16,11 @@ if (!self.__WB_pmw) {
     let frames = _____WB$wombat$assign$function_____("frames");
     let opener = _____WB$wombat$assign$function_____("opener");
 
-    const FORTNITE_API_BASE = "http://web.archive.org/web/20210116154745/https://fortnite-api.com/v2/"
-    const FORTNITE_API_CDN_BASE = "http://web.archive.org/web/20210116154745/https://fortnite-api.com/images/cosmetics/br/"
+    const FORTNITE_API_BASE = "https://fortnite-api.com/v2/"
+    const FORTNITE_API_CDN_BASE = "https://fortnite-api.com/images/cosmetics/br/"
     const endpoints = {
         CosmeticsById: FORTNITE_API_BASE + `cosmetics/br/search/ids`,
-        CosmeticsByName: (name) => FORTNITE_API_BASE + `cosmetics/br/search/all?name=${name}&matchMethod=contains`
+        CosmeticsByName: (name) => FORTNITE_API_BASE + `cosmetics/br/search/all?name=midas`
     }
 
     function getCosmeticsById(ids) {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+	<title>The Map | Ares Royale</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ares, uefn, fortnite, mini-royale, battle royale, loolo, pakked">
+    <meta name="description" content="Official website for Ares Royale." />
+    <meta name="author" content="Pakked Games Team" />
+    <meta name="robots" content="no" />
+    <meta name="theme-color" content="#D15732" />
+
+    <meta property="og:site_name" content="ares.pakkedgames.com">
+    <meta property="og:title" content="Ares Royale" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://ares.pakkedgames.com" />
+    <meta property="og:image" content="https://cdn.aresfn.dev/embeds/ares-Logo-1000px.png" />
+    <meta property="og:description"
+        content="Welcome to Ares, a new Fortnite Experience, Brought to you by Pakked Games!" />
+
+	<script src="js/layout.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		async function setupLayout() {
+			var cosmetics = await getCosmeticsById("");
+
+			if (cosmetics.length == 0) {
+				setDefaultPfp("cid_559_athena_commando_f_rebirthdefaultd")
+			} else
+				setLayoutPfp(cosmetics[0])
+
+		}
+	</script>
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/mapg.css" />
+</head>
+
+<body>
+
+	<header id="navbar">
+
+		<img src="img/ares-icon-lq.png" class="ares" onclick="window.location = '/#'" alt="ares" />
+		<ul class="desktop-navbar">
+			<li><a href="/download">Download</a></li>
+			<li><a href="https://discord.gg/aresFN">Discord</a></li>
+			<li><a href="https://trello.com/b/6yWI6ZvP/ares">Trello</a></li>
+		</ul>
+		<ul class="minimized-navbar">
+			<li><a href="/download"><i class="fas fa-download"></i></a></li>
+			<li><a href="https://discord.gg/aresFN"><i class="fab fa-discord"></i></a></li>
+			<li><a href="https://trello.com/b/6yWI6ZvP/ares"><i class="fab fa-trello"></i></a></li>
+		</ul>
+		<div class="account-panel">
+			<a class="button" onclick="openModal('login-modal')">Log in</a>
+		</div>
+	</header>
+
+	<div class="section">
+		<div class="section-content">
+			<div class="field">
+				<div>
+					<h1>Download</h1>
+					<h3>Click below to download the launcher.</h3>
+					<h3 class="secret">Make sure to signup before downloading!</h3>
+					<a class="button" href="https://cdn.aresfn.dev/files/ares.zip">Download</a>
+				</div>
+				<hr />
+				<div style="width: 300px;">
+					<h1>Support</h1>
+					<h3>Stuck? Join our Discord for help.</h3>
+					<h3 class="secret">Or join just to chat, we don't bite :D</h3>
+					<a class="button" href="https://discord.gg/aresFN" target="_blank">Join our Discord</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="login-modal minimized" id="login-modal">
+		<form method="post" id="signup-form">
+			<div class="modal-left modal-overlay hidden" style="margin-top: -200px;" id="login-modal-signup">
+				<h1 class="modal-title">Create an account</h1>
+				<p class="modal-desc">New to ares? Create your account here.</p>
+				<div class="input-block">
+					<input type="text" id="signup-username" placeholder="Username" required data-val="true"
+						data-val-required="The SignupInput.Username field is required." name="SignupInput.Username"
+						value="">
+					<span class="label">Username</span>
+				</div>
+				<div class="input-block">
+					<input type="email" id="signup-email" placeholder="Email" required data-val="true"
+						data-val-email="The SignupInput.Email field is not a valid e-mail address."
+						data-val-required="The SignupInput.Email field is required." name="SignupInput.Email" value="">
+					<span class="label">Email</span>
+				</div>
+				<div class="input-block">
+					<input type="password" id="signup-password" placeholder="Password" required data-val="true"
+						data-val-required="The SignupInput.Password field is required." name="SignupInput.Password">
+					<span class="label">Password</span>
+				</div>
+				<div class="modal-buttons">
+					<a href="#" onclick="closeModalOverlay('login-modal', 'login-modal-signup')">Sign in instead</a>
+					<button class="button" type="button"
+						onclick="openModalOverlay('login-modal', 'login-modal-captcha')">Sign up</button>
+				</div>
+			</div>
+			<div class="modal-left modal-overlay hidden" style="margin-top: -200px;" id="login-modal-captcha">
+				<h1 class="modal-title">Are you a robot?</h1>
+				<p class="modal-desc">Beep boop... boop beep?</p>
+				<div class="g-recaptcha" data-sitekey="6LcSz5MlAAAAAJBu1_6wNSofJkX_yY4fv8xD0kDB"></div>
+				<div class="modal-buttons">
+					<input type="submit" class="button" value="Confirm">
+				</div>
+			</div>
+			<input name="__RequestVerificationToken" type="hidden"
+				value="CfDJ8ADtjaCR-ANFu2Ayi-oVwhV4KujwNWPGikH7KiQNS9MnwJTTKKtVLSGZ5Vawx7Ks9XhpAWO0ecg1JDY0OaZvX4kFJ1tHXzEiiEvuDHZDHCkX0k-9jOILZVGt3HdnvWSKbtM8cd5maP1htaV92Xo1kDg" />
+		</form>
+		<div class="modal-left" id="login-modal-login">
+			<h1 class="modal-title">Welcome!</h1>
+			<p class="modal-desc">To use ares, you need to have an ares account.</p>
+			<form method="post">
+				<div class="input-block">
+					<input type="email" id="login-email" placeholder="Email" required data-val="true"
+						data-val-email="The LoginInput.Email field is not a valid e-mail address."
+						data-val-required="The LoginInput.Email field is required." name="LoginInput.Email" value="">
+					<span class="label">Email</span>
+				</div>
+				<div class="input-block">
+					<input type="password" id="login-password" placeholder="Password" required data-val="true"
+						data-val-required="The LoginInput.Password field is required." name="LoginInput.Password">
+					<span class="label">Password</span>
+				</div>
+				<div class="modal-buttons">
+					&nbsp;
+					<input value="Login" type="submit" class="button" />
+				</div>
+				<input name="__RequestVerificationToken" type="hidden"
+					value="CfDJ8ADtjaCR-ANFu2Ayi-oVwhV4KujwNWPGikH7KiQNS9MnwJTTKKtVLSGZ5Vawx7Ks9XhpAWO0ecg1JDY0OaZvX4kFJ1tHXzEiiEvuDHZDHCkX0k-9jOILZVGt3HdnvWSKbtM8cd5maP1htaV92Xo1kDg" />
+			</form>
+			<p class="sign-up">Don't have an account? <a href="#"
+					onclick="openModalOverlay('login-modal', 'login-modal-signup');">Sign up</a></p>
+		</div>
+		<div class="modal-right">
+			<i class="fas fa-times" id="close-button"
+				onclick="closeModalOverlay('login-modal', 'login-modal-signup'); closeModalOverlay('login-modal', 'login-modal-captcha'); closeModal('login-modal');"></i>
+		</div>
+	</div>
+	<noscript>
+		<div class="login-modal">
+			<div class="modal-left">
+				<h1 class="modal-title">Error</h1>
+				<p class="modal-desc">This site needs to use JavaScript to ensure the best user experience. Please turn
+					on JavaScript and refresh the page.</p>
+			</div>
+			<div class="modal-right">
+			</div>
+		</div>
+	</noscript>
+
+	<div class="btt-overlay hidden" id="btt-overlay">
+		<i class="fas fa-arrow-circle-up" onclick="window.location = '/#'"></i>
+	</div>
+
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/accountpanel.js"></script>
+	<script src="js/fortniteApi.js"></script>
+	<script>
+		window.onload = setupLayout();
+	</script>
+</body>
+
+</html>
