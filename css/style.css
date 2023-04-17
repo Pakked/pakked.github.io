@@ -385,6 +385,15 @@
     background: #090909;
     place-items: center
 }
+.section-e {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    background: #090909;
+    place-items: center
+}
 
  .section-content {
      display: grid;
