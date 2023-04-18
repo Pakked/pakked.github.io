@@ -22,17 +22,6 @@
 		content="Ares Royale Is Currently Under Development, Check Back Later." />
 	<script src="js/layout.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-		async function setupLayout() {
-			var cosmetics = await getCosmeticsById("");
-
-			if (cosmetics.length == 0) {
-				setDefaultPfp("cid_559_athena_commando_f_rebirthdefaultd")
-			} else
-				setLayoutPfp(cosmetics[0])
-
-		}
-	</script>
 
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
